@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 if (regd.getText().toString().equals("1801106398")) name.setText("Rohnak Agarwal");
+                else name.setText("Not a Valid Registration Number!");
             }
         });
 

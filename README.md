@@ -11,5 +11,5 @@ Work of the widgets: -
  - TextView: - Would display the name of the person bearing the corresponding registration number.
 
 So, basically you will have to build an app that takes in registration number as input, then upon tapping the button, makes it green and displays the name of the person. 
->Registration Number: 1801106398
+>Registration Number: 1801106398  
 >Name: Rohnak Agarwal
