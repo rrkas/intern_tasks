@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "27516187914",
+    "firebase_url": "https://intern-task-78e0e.firebaseio.com",
+    "project_id": "intern-task-78e0e",
+    "storage_bucket": "intern-task-78e0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27516187914:android:ff71be25f4f3abced4f6f3",
+        "android_client_info": {
+          "package_name": "com.rssoft.intern_task0"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27516187914-1240gm1ua79l43o8hghi3c5b8st1g5vr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOWPMo_zE1dZ3SKHCsKFiGKasJFk0_OcQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "27516187914-1240gm1ua79l43o8hghi3c5b8st1g5vr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
