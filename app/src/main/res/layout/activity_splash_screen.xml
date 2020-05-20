@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#4FC3F7"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    tools:ignore="Overdraw">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:padding="8dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/cet_logo"
+            />
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/frame"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
+
+    <TextView
+        android:fontFamily="@font/algerian"
+        android:layout_marginVertical="30dp"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Companion App"/>
+
+</LinearLayout>

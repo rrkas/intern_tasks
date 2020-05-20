@@ -1,14 +1,14 @@
 package com.rssoft.intern_task0;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -19,8 +19,11 @@ public class RegisterActivity extends AppCompatActivity {
 
     @Override
     protected void onStart() {
-        if (FirebaseAuth.getInstance().getCurrentUser() != null) startActivity(new Intent(this,
-                WelcomeActivity.class));
+        if (FirebaseAuth.getInstance().getCurrentUser() != null) {
+            startActivity(new Intent(this,
+                    DrawerActivity.class));
+            finish();
+        }
         super.onStart();
     }
 
@@ -52,7 +55,7 @@ public class RegisterActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(RegisterActivity.this, "Register Successful", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(RegisterActivity.this, WelcomeActivity.class));
+                            startActivity(new Intent(RegisterActivity.this, DrawerActivity.class));
                             finish();
                         } else {
                             Toast.makeText(RegisterActivity.this, "Something went Wrong! Please Try Again!!", Toast.LENGTH_SHORT).show();
@@ -64,7 +67,7 @@ public class RegisterActivity extends AppCompatActivity {
         findViewById(R.id.open_login_text).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
+                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                 finish();
             }
         });

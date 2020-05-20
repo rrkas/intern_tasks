@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_bg"
+    android:orientation="vertical"
+    android:paddingHorizontal="15dp"
+    android:paddingVertical="10dp"
+    tools:context=".fragments.AcademicFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/form_type_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#000" />
+
+            <EditText
+                android:id="@+id/form_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="#000"
+                android:hint="Name"
+                android:inputType="text"
+                android:textColor="#000"
+                android:textColorHint="#999" />
+
+            <EditText
+                android:id="@+id/form_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="#000"
+                android:hint="Mail"
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                android:textColorHint="#999" />
+
+            <EditText
+                android:id="@+id/form_phno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="#000"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:textColor="#000"
+                android:textColorHint="#999" />
+
+            <EditText
+                android:id="@+id/form_regd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="#000"
+                android:hint="Regd Number"
+                android:inputType="text"
+                android:textColor="#000"
+                android:textColorHint="#999" />
+
+            <EditText
+                android:id="@+id/form_sem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="#000"
+                android:hint="Semester"
+                android:inputType="number"
+                android:textColor="#000"
+                android:textColorHint="#999" />
+
+            <EditText
+                android:id="@+id/form_subj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="#000"
+                android:hint="Subject"
+                android:inputType="text"
+                android:textColor="#000"
+                android:textColorHint="#999" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false">
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                    <Button
+                        android:id="@+id/form_submit"
+                        android:text="Submit"
+                        android:background="@drawable/no_padding_btn_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                    <Button
+                        android:id="@+id/form_retrieve"
+                        android:text="Retrieve"
+                        android:background="@drawable/no_padding_btn_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                    <Button
+                        android:id="@+id/form_reset"
+                        android:text="reset"
+                        android:background="@drawable/no_padding_btn_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

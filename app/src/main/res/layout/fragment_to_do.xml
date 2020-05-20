@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_bg"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".fragments.ToDoFragment">
+
+    <EditText
+        android:textColorHint="#888"
+        android:hint="HomeWork, Projects, ..."
+        android:textColor="#000"
+        android:id="@+id/todo_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000"
+        tools:ignore="HardcodedText,TextFields"
+        android:importantForAutofill="no" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:id="@+id/todo_add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/no_padding_btn_bg"
+                android:text="ADD"
+                tools:ignore="HardcodedText" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <Button
+                android:layout_centerInParent="true"
+                android:id="@+id/todo_reset_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/no_padding_btn_bg"
+                android:text="reset"
+                tools:ignore="HardcodedText" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:backgroundTint="#000"
+        tools:listitem="@layout/todo_list_item"
+        android:id="@+id/todo_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>
